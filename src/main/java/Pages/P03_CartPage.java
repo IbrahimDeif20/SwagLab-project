@@ -10,6 +10,7 @@ import java.util.List;
 
 public class P03_CartPage {
     private final By pricesOfSelectedProductsLocator = By.xpath("(//button[.='Remove'] //preceding-sibling ::div[@class='inventory_item_price'])");
+    private final By checkoutButtonLocator = By.id("checkout");
     private final WebDriver driver;
     float totalPrice = 0;
 
@@ -35,5 +36,10 @@ public class P03_CartPage {
 
     public boolean comparingPrices(String price) {
         return getTotalPrice().equals(price);
+    }
+
+    public P04_Checkout clickOnCheckout() {
+        Utility.ClickOnElement(driver, checkoutButtonLocator);
+        return new P04_Checkout(driver);
     }
 }

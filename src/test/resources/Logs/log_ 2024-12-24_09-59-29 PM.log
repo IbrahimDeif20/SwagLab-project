@@ -1,0 +1,9 @@
+[% level] 24-12-2024 21:59:29 [main] [Tests.TC02_LandingTest.browserSetUp(Tests.TC02_LandingTest.java:27)] Edge is now opened
+[% level] 24-12-2024 21:59:29 [main] [Tests.TC02_LandingTest.browserSetUp(Tests.TC02_LandingTest.java:29)] Page is redirected to the URL
+[% level] 24-12-2024 21:59:29 [main] [Listener.ITestResultListenerClass.onTestStart(ITestResultListenerClass.java:9)] TC addingRandomProductsTChas been started
+[% level] 24-12-2024 21:59:31 [main] [Pages.P02_LandingPage.addRandomProducts(P02_LandingPage.java:67)] Random number is 2
+[% level] 24-12-2024 21:59:32 [main] [Pages.P02_LandingPage.addRandomProducts(P02_LandingPage.java:67)] Random number is 3
+[% level] 24-12-2024 21:59:32 [main] [Pages.P02_LandingPage.addRandomProducts(P02_LandingPage.java:67)] Random number is 5
+[% level] 24-12-2024 21:59:32 [main] [Pages.P02_LandingPage.getNumberOfProductsOnCart(P02_LandingPage.java:44)] number of products on cart 3
+[% level] 24-12-2024 21:59:32 [main] [Pages.P02_LandingPage.getNumberOfSelectedProducts(P02_LandingPage.java:55)] number of selected products 3
+[% level] 24-12-2024 21:59:32 [main] [Listener.ITestResultListenerClass.onTestSuccess(ITestResultListenerClass.java:14)] TC addingRandomProductsTC has been passed

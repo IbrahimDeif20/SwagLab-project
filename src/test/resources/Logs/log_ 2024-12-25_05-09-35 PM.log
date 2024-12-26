@@ -1,0 +1,6 @@
+[% level] 25-12-2024 17:09:35 [main] [Tests.TC05_OverviewTest.browserSetUp(TC05_OverviewTest.java:34)] Edge is now opened
+[% level] 25-12-2024 17:09:40 [main] [Tests.TC05_OverviewTest.browserSetUp(TC05_OverviewTest.java:36)] Page is redirected to the URL
+[% level] 25-12-2024 17:09:40 [main] [Listener.ITestResultListenerClass.onTestStart(ITestResultListenerClass.java:9)] TC checkoutStepTwoTChas been started
+[% level] 25-12-2024 17:09:41 [main] [Pages.P02_LandingPage.addRandomProducts(P02_LandingPage.java:67)] Random number is 1
+[% level] 25-12-2024 17:09:41 [main] [Pages.P02_LandingPage.addRandomProducts(P02_LandingPage.java:67)] Random number is 3
+[% level] 25-12-2024 17:09:42 [main] [Listener.ITestResultListenerClass.onTestSuccess(ITestResultListenerClass.java:14)] TC checkoutStepTwoTC has been passed

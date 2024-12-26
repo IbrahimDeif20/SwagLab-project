@@ -14,10 +14,7 @@ import java.io.IOException;
 import java.nio.file.Files;
 import java.text.SimpleDateFormat;
 import java.time.Duration;
-import java.util.Date;
-import java.util.HashSet;
-import java.util.Random;
-import java.util.Set;
+import java.util.*;
 
 public class Utility {
     private static final String screenshotPath = "Test-outputs/ScreenShots/";
@@ -89,5 +86,28 @@ public class Utility {
             generatedNumbers.add(randomNumber);
         }
         return generatedNumbers;
+    }
+
+    public static boolean verifyURL(WebDriver driver, String expectedURL) {
+        try {
+            generalWait(driver).until(ExpectedConditions.urlToBe(expectedURL));
+            return true;
+        } catch (Exception e) {
+            return false;
+        }
+    }
+
+    public static WebElement findWebElement(WebDriver driver, By locator) {
+        return driver.findElement(locator);
+    }
+
+    public static File getLastFile(String folderPath) {
+        File folder = new File(folderPath);
+        File[] files = folder.listFiles();
+        assert files != null;
+        if (files.length == 0)
+            return null;
+        Arrays.sort(files, Comparator.comparingLong(File::lastModified).reversed());
+        return files[0];
     }
 }

@@ -6,16 +6,16 @@ import org.testng.ITestResult;
 
 public class ITestResultListenerClass implements ITestListener {
     public void onTestStart(ITestResult result) {
-        LogUtils.info("TC" + result.getName() + "has been started");
+        LogUtils.info("TC " + result.getName() + "has been started");
 
     }
 
     public void onTestSuccess(ITestResult result) {
-        LogUtils.info("TC" + result.getName() + " has been passed");
+        LogUtils.info("TC " + result.getName() + " has been passed");
     }
 
     public void onTestSkipped(ITestResult result) {
-        LogUtils.info("TC" + result.getName() + " has been skipped");
+        LogUtils.info("TC " + result.getName() + " has been skipped");
     }
 
 }

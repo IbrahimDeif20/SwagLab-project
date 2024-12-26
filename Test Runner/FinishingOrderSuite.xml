@@ -1,12 +1,12 @@
 <!DOCTYPE suite SYSTEM "https://testng.org/testng-1.1.dtd" >
-<suite name="Login Suite">
+<suite name="FinishingOrder Suite">
     <listeners>
         <listener class-name="Listener.IInvokeMethodListenerClass"/>
         <listener class-name="Listener.ITestResultListenerClass"/>
     </listeners>
-    <test name="Login Test">
+    <test name="FinishingOrder Test">
         <classes>
-            <class name="Tests.TC01_LoginTest"/>
+            <class name="Tests.TC06_FinishingOrderTest"/>
         </classes>
     </test>
 </suite>

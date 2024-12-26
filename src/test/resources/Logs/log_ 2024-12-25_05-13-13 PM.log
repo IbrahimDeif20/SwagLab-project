@@ -1,0 +1,8 @@
+[% level] 25-12-2024 17:13:13 [main] [Tests.TC05_OverviewTest.browserSetUp(TC05_OverviewTest.java:34)] Edge is now opened
+[% level] 25-12-2024 17:13:14 [main] [Tests.TC05_OverviewTest.browserSetUp(TC05_OverviewTest.java:36)] Page is redirected to the URL
+[% level] 25-12-2024 17:13:14 [main] [Listener.ITestResultListenerClass.onTestStart(ITestResultListenerClass.java:9)] TC checkoutStepTwoTChas been started
+[% level] 25-12-2024 17:13:14 [main] [Pages.P02_LandingPage.addRandomProducts(P02_LandingPage.java:67)] Random number is 4
+[% level] 25-12-2024 17:13:14 [main] [Pages.P02_LandingPage.addRandomProducts(P02_LandingPage.java:67)] Random number is 6
+[% level] 25-12-2024 17:13:15 [main] [Pages.P05_OverviewPage.calculateTotalPrice(P05_OverviewPage.java:35)] Expected total price: 65.985.28
+[% level] 25-12-2024 17:13:15 [main] [Pages.P05_OverviewPage.total(P05_OverviewPage.java:30)] actual total price: Total: $71.26
+[% level] 25-12-2024 17:13:15 [main] [Listener.ITestResultListenerClass.onTestSuccess(ITestResultListenerClass.java:14)] TC checkoutStepTwoTC has been passed

@@ -1,0 +1,4 @@
+[% level] 24-12-2024 22:17:49 [main] [Tests.TC02_LandingTest.browserSetUp(TC02_LandingTest.java:28)] Edge is now opened
+[% level] 24-12-2024 22:17:50 [main] [Tests.TC02_LandingTest.browserSetUp(TC02_LandingTest.java:30)] Page is redirected to the URL
+[% level] 24-12-2024 22:17:50 [main] [Listener.ITestResultListenerClass.onTestStart(ITestResultListenerClass.java:9)] TC clickOnCartIconTChas been started
+[% level] 24-12-2024 22:17:50 [main] [Listener.ITestResultListenerClass.onTestSuccess(ITestResultListenerClass.java:14)] TC clickOnCartIconTC has been passed

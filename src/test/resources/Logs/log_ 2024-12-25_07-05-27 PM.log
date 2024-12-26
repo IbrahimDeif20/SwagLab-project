@@ -1,0 +1,52 @@
+[% level] 25-12-2024 19:05:27 [main] [Tests.TC01_LoginTest.browserSetUp(TC01_LoginTest.java:26)] Edge is now opened
+[% level] 25-12-2024 19:05:30 [main] [Tests.TC01_LoginTest.browserSetUp(TC01_LoginTest.java:28)] Page is redirected to the URL
+[% level] 25-12-2024 19:05:30 [main] [Listener.ITestResultListenerClass.onTestStart(ITestResultListenerClass.java:9)] TC ValidLoginhas been started
+[% level] 25-12-2024 19:05:31 [main] [Listener.ITestResultListenerClass.onTestSuccess(ITestResultListenerClass.java:14)] TC ValidLogin has been passed
+[% level] 25-12-2024 19:05:36 [main] [Tests.TC02_LandingTest.browserSetUp(TC02_LandingTest.java:29)] Edge is now opened
+[% level] 25-12-2024 19:05:38 [main] [Tests.TC02_LandingTest.browserSetUp(TC02_LandingTest.java:31)] Page is redirected to the URL
+[% level] 25-12-2024 19:05:38 [main] [Listener.ITestResultListenerClass.onTestStart(ITestResultListenerClass.java:9)] TC addingRandomProductsTChas been started
+[% level] 25-12-2024 19:05:38 [main] [Pages.P02_LandingPage.addRandomProducts(P02_LandingPage.java:67)] Random number is 1
+[% level] 25-12-2024 19:05:38 [main] [Pages.P02_LandingPage.addRandomProducts(P02_LandingPage.java:67)] Random number is 3
+[% level] 25-12-2024 19:05:38 [main] [Pages.P02_LandingPage.addRandomProducts(P02_LandingPage.java:67)] Random number is 4
+[% level] 25-12-2024 19:05:38 [main] [Pages.P02_LandingPage.getNumberOfProductsOnCart(P02_LandingPage.java:44)] number of products on cart 3
+[% level] 25-12-2024 19:05:38 [main] [Pages.P02_LandingPage.getNumberOfSelectedProducts(P02_LandingPage.java:55)] number of selected products 3
+[% level] 25-12-2024 19:05:38 [main] [Listener.ITestResultListenerClass.onTestSuccess(ITestResultListenerClass.java:14)] TC addingRandomProductsTC has been passed
+[% level] 25-12-2024 19:05:42 [main] [Tests.TC02_LandingTest.browserSetUp(TC02_LandingTest.java:29)] Edge is now opened
+[% level] 25-12-2024 19:05:45 [main] [Tests.TC02_LandingTest.browserSetUp(TC02_LandingTest.java:31)] Page is redirected to the URL
+[% level] 25-12-2024 19:05:45 [main] [Listener.ITestResultListenerClass.onTestStart(ITestResultListenerClass.java:9)] TC checkingNumberOfProductshas been started
+[% level] 25-12-2024 19:05:45 [main] [Pages.P02_LandingPage.addAllProductsToCart(P02_LandingPage.java:34)] Number of all products 6
+[% level] 25-12-2024 19:05:46 [main] [Pages.P02_LandingPage.getNumberOfProductsOnCart(P02_LandingPage.java:44)] number of products on cart 6
+[% level] 25-12-2024 19:05:46 [main] [Pages.P02_LandingPage.getNumberOfSelectedProducts(P02_LandingPage.java:55)] number of selected products 6
+[% level] 25-12-2024 19:05:46 [main] [Listener.ITestResultListenerClass.onTestSuccess(ITestResultListenerClass.java:14)] TC checkingNumberOfProducts has been passed
+[% level] 25-12-2024 19:05:50 [main] [Tests.TC02_LandingTest.browserSetUp(TC02_LandingTest.java:29)] Edge is now opened
+[% level] 25-12-2024 19:05:52 [main] [Tests.TC02_LandingTest.browserSetUp(TC02_LandingTest.java:31)] Page is redirected to the URL
+[% level] 25-12-2024 19:05:52 [main] [Listener.ITestResultListenerClass.onTestStart(ITestResultListenerClass.java:9)] TC clickOnCartIconTChas been started
+[% level] 25-12-2024 19:05:53 [main] [Listener.ITestResultListenerClass.onTestSuccess(ITestResultListenerClass.java:14)] TC clickOnCartIconTC has been passed
+[% level] 25-12-2024 19:05:57 [main] [Tests.TC03_CartTest.browserSetUp(TC03_CartTest.java:28)] Edge is now opened
+[% level] 25-12-2024 19:06:01 [main] [Tests.TC03_CartTest.browserSetUp(TC03_CartTest.java:30)] Page is redirected to the URL
+[% level] 25-12-2024 19:06:01 [main] [Listener.ITestResultListenerClass.onTestStart(ITestResultListenerClass.java:9)] TC comparingPricesTChas been started
+[% level] 25-12-2024 19:06:01 [main] [Pages.P02_LandingPage.addRandomProducts(P02_LandingPage.java:67)] Random number is 1
+[% level] 25-12-2024 19:06:02 [main] [Pages.P02_LandingPage.addRandomProducts(P02_LandingPage.java:67)] Random number is 6
+[% level] 25-12-2024 19:06:02 [main] [Pages.P02_LandingPage.getTotalPriceOfSelectedProducts(P02_LandingPage.java:91)] Total price on main page is 45.98
+[% level] 25-12-2024 19:06:02 [main] [Pages.P03_CartPage.getTotalPrice(P03_CartPage.java:30)] Total price on cart page is 45.98
+[% level] 25-12-2024 19:06:02 [main] [Listener.ITestResultListenerClass.onTestSuccess(ITestResultListenerClass.java:14)] TC comparingPricesTC has been passed
+[% level] 25-12-2024 19:06:06 [main] [Tests.TC04_CheckoutTest.browserSetUp(TC04_CheckoutTest.java:34)] Edge is now opened
+[% level] 25-12-2024 19:06:10 [main] [Tests.TC04_CheckoutTest.browserSetUp(TC04_CheckoutTest.java:36)] Page is redirected to the URL
+[% level] 25-12-2024 19:06:10 [main] [Listener.ITestResultListenerClass.onTestStart(ITestResultListenerClass.java:9)] TC checkoutStepOneTChas been started
+[% level] 25-12-2024 19:06:10 [main] [Pages.P02_LandingPage.addRandomProducts(P02_LandingPage.java:67)] Random number is 1
+[% level] 25-12-2024 19:06:10 [main] [Pages.P02_LandingPage.addRandomProducts(P02_LandingPage.java:67)] Random number is 5
+[% level] 25-12-2024 19:06:11 [main] [Listener.ITestResultListenerClass.onTestSuccess(ITestResultListenerClass.java:14)] TC checkoutStepOneTC has been passed
+[% level] 25-12-2024 19:06:15 [main] [Tests.TC05_OverviewTest.browserSetUp(TC05_OverviewTest.java:35)] Edge is now opened
+[% level] 25-12-2024 19:06:17 [main] [Tests.TC05_OverviewTest.browserSetUp(TC05_OverviewTest.java:37)] Page is redirected to the URL
+[% level] 25-12-2024 19:06:17 [main] [Listener.ITestResultListenerClass.onTestStart(ITestResultListenerClass.java:9)] TC checkoutStepTwoTChas been started
+[% level] 25-12-2024 19:06:17 [main] [Pages.P02_LandingPage.addRandomProducts(P02_LandingPage.java:67)] Random number is 3
+[% level] 25-12-2024 19:06:17 [main] [Pages.P02_LandingPage.addRandomProducts(P02_LandingPage.java:67)] Random number is 5
+[% level] 25-12-2024 19:06:18 [main] [Pages.P05_OverviewPage.calculateTotalPrice(P05_OverviewPage.java:35)] Calculated total price: 25.9
+[% level] 25-12-2024 19:06:19 [main] [Pages.P05_OverviewPage.total(P05_OverviewPage.java:30)] actual total price: Total: $25.90
+[% level] 25-12-2024 19:06:19 [main] [Listener.ITestResultListenerClass.onTestSuccess(ITestResultListenerClass.java:14)] TC checkoutStepTwoTC has been passed
+[% level] 25-12-2024 19:06:22 [main] [Tests.TC06_FinishingOrderTest.browserSetUp(TC06_FinishingOrderTest.java:34)] Edge is now opened
+[% level] 25-12-2024 19:06:25 [main] [Tests.TC06_FinishingOrderTest.browserSetUp(TC06_FinishingOrderTest.java:36)] Page is redirected to the URL
+[% level] 25-12-2024 19:06:25 [main] [Listener.ITestResultListenerClass.onTestStart(ITestResultListenerClass.java:9)] TC finishingOrderTChas been started
+[% level] 25-12-2024 19:06:25 [main] [Pages.P02_LandingPage.addRandomProducts(P02_LandingPage.java:67)] Random number is 1
+[% level] 25-12-2024 19:06:25 [main] [Pages.P02_LandingPage.addRandomProducts(P02_LandingPage.java:67)] Random number is 4
+[% level] 25-12-2024 19:06:27 [main] [Listener.ITestResultListenerClass.onTestSuccess(ITestResultListenerClass.java:14)] TC finishingOrderTC has been passed
