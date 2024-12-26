@@ -6,7 +6,6 @@ import Utilities.DataUtil;
 import Utilities.LogUtils;
 import org.openqa.selenium.WebDriver;
 import org.testng.Assert;
-import org.testng.annotations.AfterMethod;
 import org.testng.annotations.BeforeMethod;
 import org.testng.annotations.Listeners;
 import org.testng.annotations.Test;
@@ -14,7 +13,9 @@ import org.testng.annotations.Test;
 import java.io.FileNotFoundException;
 import java.io.IOException;
 
-import static DriverFactory.DriverFactory.*;
+import static DriverFactory.DriverFactory.getDriver;
+import static DriverFactory.DriverFactory.setUpBrowser;
+import static Utilities.Utility.verifyURL;
 
 @Listeners({IInvokeMethodListenerClass.class, ITestResultListenerClass.class})
 public class TC02_LandingTest {
@@ -54,11 +55,11 @@ public class TC02_LandingTest {
                 .enterPassword(DataUtil.getJsonData("ValidLoginData", "password"))
                 .ClickOnLoginButton()
                 .openCartPage();
-        Assert.assertTrue(new P02_LandingPage(getDriver()).verifyCartPageURL(DataUtil.getPropertyValue("environments", "CartIcon_URL")));
+        Assert.assertTrue(verifyURL(driver, "https://www.saucedemo.com/cart.html"));
     }
-
+/*
     @AfterMethod
     public void quit() {
         quitDriver();
-    }
+    }*/
 }
