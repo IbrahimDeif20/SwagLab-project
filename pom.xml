@@ -16,9 +16,40 @@
         <fakeVersion>1.0.2</fakeVersion>
         <allureVersion>2.29.0</allureVersion>
         <seleniumShuuterBug>1.6</seleniumShuuterBug>
+        <aspectjweaver>1.9.22.1</aspectjweaver>
+        <Suite.Login>Test Runner/LoginSuite.xml</Suite.Login>
+        <Suite.Landing>Test Runner/LandingSuite.xml</Suite.Landing>
+        <Suite.Cart>Test Runner/CartSuite.xml</Suite.Cart>
+        <Suite.Checkout>Test Runner/CheckoutSuite.xml</Suite.Checkout>
+        <Suite.Overview>Test Runner/OverviewSuite.xml</Suite.Overview>
+        <Suite.FinishingOrder>Test Runner/FinishingOrderSuite.xml</Suite.FinishingOrder>
+        <Suite.Regression>Test Runner/RegressionSuite.xml</Suite.Regression>
     </properties>
     <build>
         <directory>Test-outputs/target</directory>
+        <plugins>
+            <plugin>
+                <groupId>org.apache.maven</groupId>
+                <artifactId>maven-core</artifactId>
+                <version>4.0.0-rc-2</version>
+                <configuration>
+                    <SuiteXMLFiles>
+                        <SuiteXMLFile>
+                            ${Suite.Regression}
+                        </SuiteXMLFile>
+                    </SuiteXMLFiles>
+                </configuration>
+                <dependencies>
+                    <dependency>
+                        <groupId>org.aspectj</groupId>
+                        <artifactId>aspectjweaver</artifactId>
+                        <version>${aspectjweaver}</version>
+                        <scope>runtime</scope>
+                    </dependency>
+                </dependencies>
+
+            </plugin>
+        </plugins>
     </build>
     <dependencies>
         <!--  https://mvnrepository.com/artifact/org.seleniumhq.selenium/selenium-java  -->
@@ -53,6 +84,10 @@
             <artifactId>log4j-core</artifactId>
             <version>${log4jVersion}</version>
         </dependency>
+
+        <!-- https://mvnrepository.com/artifact/org.aspectj/aspectjweaver -->
+
+
         <!--  https://mvnrepository.com/artifact/com.google.code.gson/gson  -->
         <dependency>
             <groupId>com.google.code.gson</groupId>
