@@ -1,4 +1,0 @@
-[% level] 24-12-2024 21:58:36 [main] [Tests.TC02_LandingTest.browserSetUp(Tests.TC02_LandingTest.java:27)] Edge is now opened
-[% level] 24-12-2024 21:58:37 [main] [Tests.TC02_LandingTest.browserSetUp(Tests.TC02_LandingTest.java:29)] Page is redirected to the URL
-[% level] 24-12-2024 21:58:37 [main] [Listener.ITestResultListenerClass.onTestStart(ITestResultListenerClass.java:9)] TC clickOnCartIconTChas been started
-[% level] 24-12-2024 21:58:37 [main] [Listener.IInvokeMethodListenerClass.afterInvocation(IInvokeMethodListenerClass.java:21)] TCclickOnCartIconTC has been failed

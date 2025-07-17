@@ -7,6 +7,8 @@ import Pages.P02_LandingPage;
 import Pages.P03_CartPage;
 import Utilities.DataUtil;
 import Utilities.LogUtils;
+import Utilities.Utility;
+import io.qameta.allure.Description;
 import org.openqa.selenium.WebDriver;
 import org.testng.Assert;
 import org.testng.annotations.AfterMethod;
@@ -32,15 +34,19 @@ public class TC03_CartTest {
     }
 
     @Test
+    @Description("Verify that the total price of selected products is equal to the total price in the cart")
     public void comparingPricesTC() throws IOException {
-        String PriceOfSelectedProducts = new P01_LoginPage(getDriver()).enterUsername(DataUtil.getJsonData("ValidLoginData", "username"))
+        String PriceOfSelectedProducts = new P01_LoginPage(getDriver())
+                .enterUsername(DataUtil.getJsonData("ValidLoginData", "username"))
                 .enterPassword(DataUtil.getJsonData("ValidLoginData", "password"))
-                .ClickOnLoginButton().addRandomProducts(2, 6)
+                .ClickOnLoginButton()
+                .addRandomProducts(2, 6)
                 .getTotalPriceOfSelectedProducts();
-        //System.out.println(PriceOfSelectedProducts);
+        Utility.takeScreenshot(getDriver(), "comparingPricesTC");
+        LogUtils.info("Total price of selected products is: " + PriceOfSelectedProducts);
         new P02_LandingPage(getDriver()).openCartPage();
         Assert.assertTrue(new P03_CartPage(getDriver()).comparingPrices(PriceOfSelectedProducts));
-
+        LogUtils.info("Total price of selected products is equal to the total price in the cart");
     }
 
     @AfterMethod

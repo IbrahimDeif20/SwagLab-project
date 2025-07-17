@@ -1,3 +1,0 @@
-[% level] 25-12-2024 19:50:54 [main] [Tests.TC01_LoginTest.browserSetUp(TC01_LoginTest.java:26)] Edge is now opened
-[% level] 25-12-2024 19:50:59 [main] [Tests.TC01_LoginTest.browserSetUp(TC01_LoginTest.java:28)] Page is redirected to the URL
-[% level] 25-12-2024 19:50:59 [main] [Listener.ITestResultListenerClass.onTestStart(ITestResultListenerClass.java:9)] TC ValidLoginhas been started

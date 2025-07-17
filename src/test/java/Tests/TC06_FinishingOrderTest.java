@@ -8,6 +8,7 @@ import Utilities.DataUtil;
 import Utilities.LogUtils;
 import Utilities.Utility;
 import com.github.javafaker.Faker;
+import io.qameta.allure.Description;
 import org.testng.Assert;
 import org.testng.annotations.AfterMethod;
 import org.testng.annotations.BeforeMethod;
@@ -38,14 +39,22 @@ public class TC06_FinishingOrderTest {
     }
 
     @Test
+    @Description("Verify that the user can finish the order successfully")
     public void finishingOrderTC() throws IOException {
-        new P01_LoginPage(getDriver()).enterUsername(DataUtil.getJsonData("ValidLoginData", "username"))
+        new P01_LoginPage(getDriver())
+                .enterUsername(DataUtil.getJsonData("ValidLoginData", "username"))
                 .enterPassword(DataUtil.getJsonData("ValidLoginData", "password"))
-                .ClickOnLoginButton().addRandomProducts(2, 6)
-                .openCartPage().clickOnCheckout().fillForm(firstName, lastName, zipcode)
-                .clickOnContinueButton().clickOnFinishButton();
+                .ClickOnLoginButton()
+                .addRandomProducts(2, 6)
+                .openCartPage()
+                .clickOnCheckout()
+                .fillForm(firstName, lastName, zipcode)
+                .clickOnContinueButton()
+                .clickOnFinishButton();
+        Utility.takeScreenshot(getDriver(), "OrderFinished");
+        LogUtils.info("Order is finished successfully");
         Assert.assertTrue(new P06_FinishingOrderPage(getDriver()).checkThanksMsg());
-
+        LogUtils.info("Thanks message is displayed");
     }
 
     @AfterMethod

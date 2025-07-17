@@ -29,5 +29,4 @@ public class P01_LoginPage {
         Utility.ClickOnElement(driver, loginButton);
         return new P02_LandingPage(driver);
     }
-
 }

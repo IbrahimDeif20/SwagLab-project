@@ -8,6 +8,7 @@ import Utilities.DataUtil;
 import Utilities.LogUtils;
 import Utilities.Utility;
 import com.github.javafaker.Faker;
+import io.qameta.allure.Description;
 import org.testng.Assert;
 import org.testng.annotations.AfterMethod;
 import org.testng.annotations.BeforeMethod;
@@ -39,14 +40,21 @@ public class TC05_OverviewTest {
     }
 
     @Test
+    @Description("Verify that the user can complete the checkout step two successfully")
     public void checkoutStepTwoTC() throws IOException {
-        new P01_LoginPage(getDriver()).enterUsername(DataUtil.getJsonData("ValidLoginData", "username"))
+        new P01_LoginPage(getDriver())
+                .enterUsername(DataUtil.getJsonData("ValidLoginData", "username"))
                 .enterPassword(DataUtil.getJsonData("ValidLoginData", "password"))
-                .ClickOnLoginButton().addRandomProducts(2, 6)
-                .openCartPage().clickOnCheckout().fillForm(firstName, lastName, zipcode)
+                .ClickOnLoginButton()
+                .addRandomProducts(2, 6)
+                .openCartPage()
+                .clickOnCheckout()
+                .fillForm(firstName, lastName, zipcode)
                 .clickOnContinueButton();
+        Utility.takeScreenshot(getDriver(), "checkoutStepTwoTC");
+        LogUtils.info("Checkout step two is completed");
         Assert.assertTrue(new P05_OverviewPage(getDriver()).comparingPrices());
-
+        LogUtils.info("Prices are compared successfully");
     }
 
     @AfterMethod

@@ -1,6 +1,0 @@
-[% level] 25-12-2024 18:48:52 [main] [Tests.TC06_FinishingOrderTest.browserSetUp(TC06_FinishingOrderTest.java:34)] Edge is now opened
-[% level] 25-12-2024 18:48:54 [main] [Tests.TC06_FinishingOrderTest.browserSetUp(TC06_FinishingOrderTest.java:36)] Page is redirected to the URL
-[% level] 25-12-2024 18:48:54 [main] [Listener.ITestResultListenerClass.onTestStart(ITestResultListenerClass.java:9)] TC finishingOrderTChas been started
-[% level] 25-12-2024 18:48:55 [main] [Pages.P02_LandingPage.addRandomProducts(P02_LandingPage.java:67)] Random number is 3
-[% level] 25-12-2024 18:48:55 [main] [Pages.P02_LandingPage.addRandomProducts(P02_LandingPage.java:67)] Random number is 4
-[% level] 25-12-2024 18:48:56 [main] [Listener.IInvokeMethodListenerClass.afterInvocation(IInvokeMethodListenerClass.java:21)] TCfinishingOrderTC has been failed

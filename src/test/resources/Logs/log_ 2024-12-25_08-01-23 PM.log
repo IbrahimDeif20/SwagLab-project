@@ -1,4 +1,0 @@
-[% level] 25-12-2024 20:01:23 [main] [Tests.TC01_LoginTest.browserSetUp(TC01_LoginTest.java:26)] Edge is now opened
-[% level] 25-12-2024 20:01:26 [main] [Tests.TC01_LoginTest.browserSetUp(TC01_LoginTest.java:28)] Page is redirected to the URL
-[% level] 25-12-2024 20:01:26 [main] [Listener.ITestResultListenerClass.onTestStart(ITestResultListenerClass.java:9)] TC ValidLoginhas been started
-[% level] 25-12-2024 20:01:26 [main] [Listener.ITestResultListenerClass.onTestSuccess(ITestResultListenerClass.java:14)] TC ValidLogin has been passed

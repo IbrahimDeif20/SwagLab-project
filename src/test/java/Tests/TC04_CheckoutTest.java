@@ -7,6 +7,7 @@ import Utilities.DataUtil;
 import Utilities.LogUtils;
 import Utilities.Utility;
 import com.github.javafaker.Faker;
+import io.qameta.allure.Description;
 import org.testng.Assert;
 import org.testng.annotations.AfterMethod;
 import org.testng.annotations.BeforeMethod;
@@ -25,6 +26,7 @@ public class TC04_CheckoutTest {
     private final String lastName = DataUtil.getJsonData("information", "lName") + Utility.getTimeStamps();
     private final String zipcode = new Faker().number().digits(5);
 
+
     public TC04_CheckoutTest() throws FileNotFoundException {
     }
 
@@ -38,14 +40,22 @@ public class TC04_CheckoutTest {
     }
 
     @Test
+    @Description("Verify that the user can complete the first step of checkout process")
     public void checkoutStepOneTC() throws IOException {
-        new P01_LoginPage(getDriver()).enterUsername(DataUtil.getJsonData("ValidLoginData", "username"))
+        new P01_LoginPage(getDriver())
+                .enterUsername(DataUtil.getJsonData("ValidLoginData", "username"))
                 .enterPassword(DataUtil.getJsonData("ValidLoginData", "password"))
-                .ClickOnLoginButton().addRandomProducts(2, 6)
-                .openCartPage().clickOnCheckout().fillForm(firstName, lastName, zipcode)
+                .ClickOnLoginButton()
+                .addRandomProducts(2, 6)
+                .openCartPage()
+                .clickOnCheckout()
+                .fillForm(firstName, lastName, zipcode)
                 .clickOnContinueButton();
-        Assert.assertTrue(Utility.verifyURL(getDriver(), DataUtil.getPropertyValue("environments", "Checkout_URL")));
-
+        Utility.takeScreenshot(getDriver(), "CheckoutStepOne");
+        LogUtils.info("Checkout step one is completed");
+        Assert.assertTrue(Utility.verifyURL
+                (getDriver(), DataUtil.getPropertyValue("environments", "Checkout_URL")));
+        LogUtils.info("URL is verified successfully");
     }
 
     @AfterMethod
