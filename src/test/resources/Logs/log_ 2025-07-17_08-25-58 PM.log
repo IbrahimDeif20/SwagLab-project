@@ -1,0 +1,12 @@
+[INFO] 17-07-2025 20:25:58 [main] [Tests.TC01_LoginTest.browserSetUp(TC01_LoginTest.java:26)] Edge is now opened
+[INFO] 17-07-2025 20:25:59 [main] [Tests.TC01_LoginTest.browserSetUp(TC01_LoginTest.java:28)] Page is redirected to the URL
+[INFO] 17-07-2025 20:25:59 [main] [Listener.ITestResultListenerClass.onTestStart(ITestResultListenerClass.java:9)] TC InvalidLoginWithInvalidPasswordhas been started
+[INFO] 17-07-2025 20:25:59 [main] [Listener.ITestResultListenerClass.onTestSuccess(ITestResultListenerClass.java:14)] TC InvalidLoginWithInvalidPassword has been passed
+[INFO] 17-07-2025 20:26:01 [main] [Tests.TC01_LoginTest.browserSetUp(TC01_LoginTest.java:26)] Edge is now opened
+[INFO] 17-07-2025 20:26:02 [main] [Tests.TC01_LoginTest.browserSetUp(TC01_LoginTest.java:28)] Page is redirected to the URL
+[INFO] 17-07-2025 20:26:02 [main] [Listener.ITestResultListenerClass.onTestStart(ITestResultListenerClass.java:9)] TC InvalidLoginWithInvalidUsernamehas been started
+[INFO] 17-07-2025 20:26:02 [main] [Listener.ITestResultListenerClass.onTestSuccess(ITestResultListenerClass.java:14)] TC InvalidLoginWithInvalidUsername has been passed
+[INFO] 17-07-2025 20:26:03 [main] [Tests.TC01_LoginTest.browserSetUp(TC01_LoginTest.java:26)] Edge is now opened
+[INFO] 17-07-2025 20:26:04 [main] [Tests.TC01_LoginTest.browserSetUp(TC01_LoginTest.java:28)] Page is redirected to the URL
+[INFO] 17-07-2025 20:26:04 [main] [Listener.ITestResultListenerClass.onTestStart(ITestResultListenerClass.java:9)] TC ValidLoginhas been started
+[INFO] 17-07-2025 20:26:05 [main] [Listener.ITestResultListenerClass.onTestSuccess(ITestResultListenerClass.java:14)] TC ValidLogin has been passed
